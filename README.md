@@ -8,8 +8,8 @@
 ## Project Overview
 This repository documents how to create an **Amazon S3 bucket**, upload sample data, and attach an **S3 Lifecycle rule** that automatically transitions objects from the **S3 Standard** storage class to **S3 Glacier Flexible Retrieval** for low-cost archival.
 
-* **Author:** Mukwaya Lwere
-* **Course:** CS 79B — Cloud Infrastructure & Database Administration
+* **Author:** ML
+* **Course:**  Cloud Infrastructure & Database Administration
 * **Assignment:** Assignment 3 — S3 → Glacier
 * **Bucket:** `labglacier-lwere` (US East, Ohio — `us-east-2`)
 * **Lifecycle rule:** `lifecycle_glacier` (entire bucket, transition at Day 1)
@@ -61,7 +61,7 @@ aws-s3-glacier-lifecycle-lab/
 
 ### Option A: AWS Console (what was done in the lab)
 1. **Create the bucket:** S3 → *Create bucket* → name `labglacier-lwere` in `us-east-2`.
-2. **Upload sample files:** open the bucket → *Upload* → add the CSV and the `website/` folder. Confirm all 8 files show *Succeeded*.
+2. **Upload sample files:** Open the bucket → *Upload* → add the CSV and the `website/` folder. Confirm all 8 files show *Succeeded*.
 3. **Create the lifecycle rule:** bucket → *Management* → *Lifecycle rules* → *Create lifecycle rule*.
    * Name: `lifecycle_glacier`
    * Scope: apply to all objects in the bucket
