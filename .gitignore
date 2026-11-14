@@ -1,0 +1,24 @@
+# AWS Private Keys & Credentials (CRITICAL: Never commit PEM/PPK files)
+*.pem
+*.ppk
+*.key
+.env
+*.secret
+
+# OS & Editor Artifacts
+.DS_Store
+Thumbs.db
+*.swp
+*~
+.vscode/
+.idea/
+
+# Temporary Logs & Backups
+*.log
+*.bak
+*.tmp
+
+# AWS CLI & local sample data
+.aws/
+credentials
+sample-data/
